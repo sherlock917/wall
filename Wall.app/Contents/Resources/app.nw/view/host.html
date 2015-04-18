@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Wall </title>
+  <link rel="stylesheet" href="../asset/css/layout.css">
+  <link rel="stylesheet" href="../asset/css/host.css">
+</head>
+<body>
+
+  <div id="aside" class="aside">
+    <div id="qrcode" class="qrcode"></div>
+    <div class="stats">
+      <p class="stats-row">
+        现在有
+        <span class="stats-data" id="stats-clients">0</span>
+        人在线
+      </p>
+      <p class="stats-row">
+        一共有
+        <span class="stats-data" id="stats-msgCount">0</span>
+        条留言
+      </p>
+    </div>
+  </div>
+
+  <div id="main">
+    <div class="timeline-background">
+      <div class="timeline-start"></div>
+      <div class="timeline-end"></div>
+    </div>
+    <section class="timeline-item">
+      <div class="timeline-tail">
+        <div class="timeline-node"></div>
+      </div>
+      <div class="timeline-content">
+        <p class="timeline-text">
+          Welcome to Wall!
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <!-- <div id="qrcode"></div>
+
+  <h1><span id="num" class="host-clients-num">0</span> clients conneted</h1>
+
+  <div id="form">
+    <textarea id="input"></textarea>
+    <button id="submit">submit</button>
+  </div>
+
+  <div id="msg" class="host-msg-container"></div> -->
+
+  <!-- dom things -->
+  <!--<script>
+  document.getElementById('submit').onclick = function () {
+    var input = document.getElementById('input');
+    var data = {
+      id : 'server',
+      name : '管理员',
+      text : input.value,
+      time : Tool.getFormattedTime()
+    }
+    input.value = '';
+    server.emit('update', JSON.stringify(data), function () {
+      updatecb(JSON.stringify(data));
+    });
+  }
+  </script>-->
+  <script type="text/javascript" src="../asset/js/qrcode.min.js"></script>
+  <script src="../asset/js/jquery-1.11.0.min.js"></script>
+  <script src="../asset/js/tool.js"></script>
+  <script src="../asset/js/host.js"></script>
+</body>
+</html>

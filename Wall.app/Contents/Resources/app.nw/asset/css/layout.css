@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+
+*{
+  margin: 0;
+  padding: 0;
+  color: #000;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+body{
+  background: #8c2;
+}
+
+.clear{
+  clear: both;
+}
+
+@keyframes fade-in{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@-webkit-keyframes fade-in{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

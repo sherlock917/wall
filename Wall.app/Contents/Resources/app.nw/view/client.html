@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome!</title>
+  <link rel="stylesheet" href="/asset/css/layout.css">
+  <link rel="stylesheet" href="/asset/css/client.css">
+</head>
+<body>
+
+  <div id="login">
+    <p>
+      <input type="text" id="login-name" autofocus="true" placeholder="先留下名字吧~">
+    </p>
+    <p>
+      <button id="login-submit">进入</button>
+    </p>
+  </div>
+  
+  <div id="main">
+    <div id="info" class="info">
+      <div id="qrcode"></div>
+      <div class="info-main">
+        <h1 class="info-title">Wall ... "</h1>
+        <h3 class="info-people">
+          <img src="./asset/img/people.png" alt="" class="info-people-icon">
+          <span>现在有</span>
+          <span class="info-people-num"> 0 </span>
+          <span>人在线</span>
+        </h3>
+      </div>
+    </div>
+    <div id="msg-container" class="msg-container"></div>
+    <div id="form" class="form">
+      <textarea id="input" class="form-input"></textarea>
+      <button id="submit" class="form-submit">发送</button>
+    </div>
+    <div id="whisper-sender" class="whisper-sender">
+      <h3 class="whisper-title">对 <span class="whisper-target"></span> 说：</h3>
+      <textarea class="whisper-input"></textarea>
+      <button class="whisper-submit">传纸条</button>
+      <button class="whisper-cancel">不传了</button>
+    </div>
+    <div id="whisper-reciever" class="whisper-reciever">
+      <h3 class="whisper-title"><span class="whisper-source"></span> 对你说：</h3>
+      <p class="whisper-content"></p>
+      <button class="whisper-reply">回复</button>
+      <button class="whisper-ignore">忽略</button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/asset/js/qrcode.min.js"></script>
+  <script src="/asset/js/jquery-1.11.0.min.js"></script>
+  <script src="/asset/js/tool.js"></script>
+  <script src="/asset/js/client.js"></script>
+</body>
+</html>
